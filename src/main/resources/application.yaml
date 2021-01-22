@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:Test_DB
+    username: sa
+    password:
+    platform: h2
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+  application:
+    name: ORDER-SERVICE
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+server:
+  port: 8080
