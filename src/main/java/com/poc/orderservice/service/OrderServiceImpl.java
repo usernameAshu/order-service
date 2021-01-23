@@ -18,7 +18,7 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String ENDPOINT_URL = "http://localhost:8081/payments/v1";
+    private final String ENDPOINT_URL = "http://localhost:9091/payments/v1";
 
     @Override
     public TransactionResponse saveOrder(TransactionRequest request) {
